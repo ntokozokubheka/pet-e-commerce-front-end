@@ -123,9 +123,7 @@
   height: 300px;
   position: relative;
   margin: 40px auto 0 auto; /* pushes it down */
-  border-style: dotted;
 }
-
 
 .mySlides {
   display: none;
