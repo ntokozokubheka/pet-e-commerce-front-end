@@ -108,24 +108,37 @@
 }
 
 
-
-/*************************************/
-
-
-
-
 /* Import Google font - Poppins */
 
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-  border-style:dotted;
+
+.mySlides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* or 'contain', depending on your style */
+  display: block;
 }
 
-/* Hide the images by default */
+.slideshow-container {
+  width: 55%;
+  height: 300px;
+  position: relative;
+  margin: 40px auto 0 auto; /* pushes it down */
+  border-style: dotted;
+}
+
+
 .mySlides {
   display: none;
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.mySlides.showing {
+  display: block;
+  position: relative;
+  opacity: 1;
 }
 
 /* Next & previous buttons */
@@ -136,7 +149,7 @@
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: green;
   font-weight: bold;
   font-size: 18px;
   transition: 5s ease;
@@ -152,12 +165,13 @@
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  color: limegreen;
+  background-color: rgba(0, 0, 0, 0.3); /* optional glow effect */
 }
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  color: rgba(0,0,0,0.8);
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
