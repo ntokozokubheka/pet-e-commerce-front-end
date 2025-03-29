@@ -111,6 +111,21 @@
   width: 100%;
   height: 400px;
 }
+
+.list-group-item a {
+    color: green !important;
+    text-decoration: none; /* Optional: Removes underline */
+  }
+  
+  .list-group-item a:hover {
+    color: darkgreen; /* Changes color when hovered */
+  }
+
+.card{
+
+ background-color: greenyellow;
+
+}
 footer {
     color: #fff;
 }
